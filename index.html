@@ -17,7 +17,7 @@
       img {
         width: 100%;
       }
-      .container {
+      .my-container {
         width: 82%;
         max-width: 1170px;
         margin: 0 auto;
@@ -31,10 +31,10 @@
     </style>
   </head>
   <body>
-    <header class="h-screen bg-[#FFFBF0]">
-      <div class="container">
+    <header class="min-h-screen bg-[#FFFBF0] flex items-center pt-20 pb-14">
+      <div class="my-container">
         <nav
-          class="bg-transparent h-16 w-full static top-0 left-0 shadow-xl flex items-center justify-between px-3 md:px-24 lg:px-32 sm:py-9 font-roboto"
+          class="bg-[#FFFBF0] h-16 w-full fixed top-0 left-0 shadow-xl flex items-center justify-between px-3 md:px-24 lg:px-32 sm:py-9 font-roboto"
         >
           <!-- logo -->
           <div class="logo w-6/12 sm:w-5/12 md:w-4/12 lg:w-3/12 cursor-pointer">
@@ -92,35 +92,43 @@
           </div>
         </nav>
 
-        <div class="banner">
-          <div class="banner-left-container">
-            <h1>Be the Penguins of Winter</h1>
-            <p>
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry.
-            </p>
-            <button
-              class="bg-[#85A019] text-white font-roboto uppercase rounded-lg"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 24 24"
-                fill="currentColor"
-                class="w-6 h-6"
+        <div class="banner flex items-center flex-col lg:flex-row px-3 gap-10">
+          <div class="banner-left-container lg:w-6/12 order-3 lg:order-1">
+            <div class="left-contents max-w-[416px]">
+              <h1
+                class="font-babas text-5xl md:text-7xl text-[#363958] md:leading-[80px]"
               >
-                <path
-                  d="M2.25 2.25a.75.75 0 0 0 0 1.5h1.386c.17 0 .318.114.362.278l2.558 9.592a3.752 3.752 0 0 0-2.806 3.63c0 .414.336.75.75.75h15.75a.75.75 0 0 0 0-1.5H5.378A2.25 2.25 0 0 1 7.5 15h11.218a.75.75 0 0 0 .674-.421 60.358 60.358 0 0 0 2.96-7.228.75.75 0 0 0-.525-.965A60.864 60.864 0 0 0 5.68 4.509l-.232-.867A1.875 1.875 0 0 0 3.636 2.25H2.25ZM3.75 20.25a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0ZM16.5 20.25a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0Z"
-                />
-              </svg>
-              buy now
-            </button>
+                <span class="text-[#FABE4C]">Be the Penguins</span> of Winter
+              </h1>
+              <p class="text-[#3E3E3E] leading-6 mb-4">
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry.
+              </p>
+              <button
+                class="bg-gradient-to-r from-[#A4BC46] to-[#85A019] text-white font-roboto uppercase rounded-lg py-4 px-8 flex items-center gap-2"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  class="w-6 h-6"
+                >
+                  <path
+                    d="M2.25 2.25a.75.75 0 0 0 0 1.5h1.386c.17 0 .318.114.362.278l2.558 9.592a3.752 3.752 0 0 0-2.806 3.63c0 .414.336.75.75.75h15.75a.75.75 0 0 0 0-1.5H5.378A2.25 2.25 0 0 1 7.5 15h11.218a.75.75 0 0 0 .674-.421 60.358 60.358 0 0 0 2.96-7.228.75.75 0 0 0-.525-.965A60.864 60.864 0 0 0 5.68 4.509l-.232-.867A1.875 1.875 0 0 0 3.636 2.25H2.25ZM3.75 20.25a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0ZM16.5 20.25a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0Z"
+                  />
+                </svg>
+                buy now
+              </button>
+            </div>
           </div>
-          <div class="banner-right-container"></div>
+          <div class="banner-right-container lg:w-5/12 order-2">
+            <div class="banner-image">
+              <img src="images/model.png" alt="" />
+            </div>
+          </div>
         </div>
       </div>
     </header>
-    <main class="h-screen"></main>
-    <main class="h-screen"></main>
-    <main class="h-screen"></main>
+    <main></main>
   </body>
 </html>
